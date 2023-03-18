@@ -1,4 +1,4 @@
-import {generatePhotoDatas} from './utils.js';
+import {generatePhotosData} from './utils.js';
 
 const pictureTemplate = document.querySelector('#picture').content;
 const similarListElement = document.querySelector('.pictures');
@@ -6,7 +6,7 @@ const similarListFragment = document.createDocumentFragment();
 
 
 const createPictures = function () {
-  const photos = generatePhotoDatas();
+  const photos = generatePhotosData();
   for (const photo of photos) {
     const pictureElement = pictureTemplate.cloneNode(true);
     const newPictureImg = pictureElement.querySelector('.picture__img');
