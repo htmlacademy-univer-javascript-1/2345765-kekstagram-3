@@ -1,8 +1,9 @@
 import './picture.js';
-import {generatePhotoDatas, stringIsLess} from './utils.js';
+import './upload.js';
+import {generatePhotosData, stringIsLessOrEqual} from './utils.js';
 
 
 // eslint-disable-next-line no-console
-console.log(generatePhotoDatas());
+console.log(generatePhotosData());
 // eslint-disable-next-line no-console
-console.log((stringIsLess('123', 4)));
+console.log((stringIsLessOrEqual('123', 4)));
