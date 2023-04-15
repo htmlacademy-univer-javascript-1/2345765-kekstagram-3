@@ -5,7 +5,7 @@ const imgPreview = document.querySelector('.img-upload__preview');
 
 smallerButton.addEventListener('click', () => {
   let intPercentValue = parseInt(scaleValue.value, 10);
-  if (intPercentValue > 0) {
+  if (intPercentValue > 25) {
     intPercentValue -= 25;
     scaleValue.value = `${intPercentValue} %`;
     imgPreview.style.transform = `scale(${intPercentValue / 100})`;
