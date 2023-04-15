@@ -21,3 +21,9 @@ biggerButton.addEventListener('click', () => {
   }
 });
 
+const resetTransform = function() {
+  scaleValue.value = '100 %';
+  imgPreview.style.transform = 'scale(1)';
+};
+
+export {resetTransform};
