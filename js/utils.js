@@ -45,7 +45,4 @@ const generatePhotosData = function () {
 };
 
 
-export  {generatePhotosData, stringIsLessOrEqual};
-
-
-
+export {generatePhotosData, stringIsLessOrEqual};
